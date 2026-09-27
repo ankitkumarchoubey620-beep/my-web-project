@@ -1,0 +1,116 @@
+@ Day 1
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\LENOVO> d:
+PS D:\> pwd
+
+Path
+----
+D:\
+
+
+PS D:\> type cd
+type : Cannot find path 'D:\cd' because it does not exist.
+At line:1 char:1
++ type cd
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\cd:String) [Get-Content]
+   , ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.G
+   etContentCommand
+
+PS D:\> mkdir my-web-project
+
+
+    Directory: D:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-09-2026     22:46                my-web-project
+
+
+PS D:\> cd my-web-project
+PS D:\my-web-project> pwd
+
+Path
+----
+D:\my-web-project
+
+
+PS D:\my-web-project> git init
+Initialized empty Git repository in D:/my-web-project/.git/
+PS D:\my-web-project> git branch
+PS D:\my-web-project> New-Item index.html
+
+
+    Directory: D:\my-web-project
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        26-09-2026     23:08              0 index.html
+
+
+PS D:\my-web-project> code .
+PS D:\my-web-project> git add index.html
+PS D:\my-web-project> git commit -m "Feat:Complete Day 1 semantic HTML skeleton"
+[main (root-commit) ad2e5b4] Feat:Complete Day 1 semantic HTML skeleton
+ 1 file changed, 31 insertions(+)
+ create mode 100644 index.html
+PS D:\my-web-project> Start-Process index.html
+PS D:\my-web-project>
+
+@ Day 2
+
+PS D:\> cd my-web-project
+PS D:\my-web-project> New-Item README.md
+
+
+    Directory: D:\my-web-project
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        27-09-2026     02:25              0 README.md
+
+
+PS D:\my-web-project> code .
+PS D:\my-web-project> git add README.md
+PS D:\my-web-project> git add README.md
+PS D:\my-web-project> git commit -m "Docs: Add 97-day execution plan to README"
+[main 1ccaeb8] Docs: Add 97-day execution plan to README
+ 1 file changed, 185 insertions(+)
+ create mode 100644 README.md
+PS D:\my-web-project> git branch -M main
+PS D:\my-web-project> git remote add origin git remote add origin https://github.com/ankitkumarchoubey620-beep/my-web-project.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+PS D:\my-web-project> git remote add origin https://github.com/ankitkumarchoubey620-beep/my-web-project.git
+PS D:\my-web-project> git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 6.24 KiB | 3.12 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ankitkumarchoubey620-beep/my-web-project.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\my-web-project>
+
+
+
+

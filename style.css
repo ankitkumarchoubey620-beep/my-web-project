@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;/* Crucial for the Box Model */
+
+}
+body{
+    font-family:Arial,sans-serif;
+    background-color:#f0f2f5;
+    min-height:100vh;
+
+    /* flexbox layout to center the card perfectly on the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 2. The Box Model applied to the Card Container */
+.profile-card{
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px; /* Internal spacing around elements */
+    border-radius:12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    /* Flexbox layout to align card contents vertically */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* 3. Image Styling */
+
+.profile-img {
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* External spacing below image */
+    border: 3px solid #007bff;
+}
+
+/* 4. Text Hierarchy Typography */
+
+.profile-name{
+    font-size: 24px;
+    color:#333333;
+    margin-bottom:8px;
+    
+}
+
+.profile-title{
+    font: size 16px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.profile-bio{
+    font-size: 14px;
+    color:#666666;
+    line-height:1.5;
+    margin-bottom:25px;
+}
+
+/* 5. Button Links Styling */
+
+.link-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight:bold ;
+    transition: background-color 0.2s ease;
+
+}
+
+.link-btn:hover{
+    background-color: #007bff;
+}
