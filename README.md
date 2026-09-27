@@ -24,7 +24,7 @@ My objective is to transform into a capable full-stack developer by building **1
 ### 🟦 PHASE 1: HTML & CSS Foundations (Sept 26 – Oct 9)
 #### Project 1.1 — Personal Profile Card
 - [x] **Day 1 (Sept 26):** Set up project folder + git repo; write semantic HTML skeleton (`<header>`, `<main>`, `<section>`, `<footer>`) with placeholder content.
-- [ ] **Day 2 (Sept 27):** Style the card using the box model + Flexbox centering; swap in real content (photo, bio, links).
+- [x] **Day 2 (Sept 27):** Style the card using the box model + Flexbox centering; swap in real content (photo, bio, links).
 - [ ] **Day 3 (Sept 28):** Add responsive breakpoints, CSS variables for theming, and hover states; test at mobile widths.
 - [ ] **Day 4 (Sept 29) — Buffer/Review:** Attempt dark/light mode stretch goal, clean up CSS, push to GitHub with a README, verify on 2+ screen sizes.
 
