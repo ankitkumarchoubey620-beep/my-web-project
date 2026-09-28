@@ -40,4 +40,29 @@ main {
     padding: 20px;
 }
 
-/* Keep all your other CSS styles (.profile-card, .profile-img, etc.) exactly the same below this! */
+/* ==========================================
+   5. Responsive Breakpoints (Mobile View)
+   ========================================== */
+
+   @media (max-width: 400px){
+    .profile-card {
+        width:100%;          /* Makes the card fluid on small screens */
+        max-width:310px;     /* Prevents it from touching the absolute edges */
+        padding:20px;       /* Reduces internal padding so content fits better */
+
+    }
+    .profile-img{
+        width:100px;        /* Shrinks the image slightly for mobile displays */
+        height:100px;
+
+    }
+    .profile-name{
+        font-size: 20px;    /* Slightly smaller headings on mobile phone sizes */
+
+    }
+
+   } 
+   
+   
+   
+   
