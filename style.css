@@ -7,9 +7,22 @@
     --primary-color: #007bff;
     --primary-hover: #0056b3;
     --text-main: #333333;
-    --text-muted: #666666;
+    --text-muted: #666666; 
     --border-radius: 12px;
     --transition-speed: 0.3s;
+}
+
+body.dark-theme {
+    --bg-color: #121212;
+    --card-bg:#1e1e1e;
+    --text-main:#ffffff;
+    --text-muted: #aaaaaa;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05)
+
+}
+
+body{
+    transition: background-color var(--transition-speed)ease,color var (--transition-speed) ease;
 }
 
 /* ==========================================

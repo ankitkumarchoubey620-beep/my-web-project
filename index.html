@@ -16,6 +16,8 @@
     <!-- Header Section -->
 <header>
     <h1> Welcom to MY Profile</h1>
+    <!-- ADDED:Dark Mode Toggle Button -->
+     <button id = "theme-toggle" style="margin-top: 10px; padding: 5px 15px; border-radius:20px;border:1px solid #ccc; cursor: pointer;">Toggle theme🌙</button>
 </header>
 
 <!-- Main Content Area -->
@@ -23,7 +25,7 @@
 <!-- Profile Card Section  -->
     <div class="Profile-card">    
         <!-- Profile Image Placeholder -->
-    <img class ="profile-img" src="https://placeholder.com" alt="Profile Picture">
+    <img class ="profile-img" src="ankit1347.jpeg" alt="Profile Picture">
      
     <!-- Bio Content -->
     <h2 class=" profile-name">Ankit Kumar chaubey</h2>
@@ -47,6 +49,15 @@
  <footer>
     <p>&copy;2026 My Profile Card. All rights reserved.</p>
  </footer>
+
+  <!-- ADDED: Tiny 3-line script to switch the theme class on click -->
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click',()=>{
+        document.body.classList.toggle('dark-theme');
+    });
+</script>
+
 
 </body>
 </html>
